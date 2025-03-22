@@ -1,0 +1,97 @@
+.main-form{
+    width: 100%;
+}
+
+/*Diseño del formulario*/
+form{
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 3px rgb(183, 182, 182);
+    border-radius: 10px;
+    width: min(500px, 90%);
+    min-height: 500px;
+    margin: auto;
+    margin-top: 5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+form h2{
+    padding-top: 1.5em;
+    font-size: 2em;
+    /* background-color: aqua; */
+}
+
+form h2 + p{
+    margin-top: .7em;
+}
+
+.forms_inputs{
+    margin: 2em 0 1.7em;
+    display: grid;
+    gap: 2em;
+}
+
+/*css para input animado*/
+
+.label-animated{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "input";
+    color: #bdbdbd;
+}
+
+.label-animated input{
+    grid-area: input;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1.3em 1.6em;
+    border-radius: 10px;
+    border: 1px solid #dddbdb;
+    background-color: transparent;
+    outline: none;
+}
+
+.label-animated span{
+    grid-area: input;
+    width: max-content;
+    height: 100%;
+    margin-left: 22%;
+    padding: 0 .5em;
+    display: flex;
+    align-items: center;
+    transform-origin: left center;
+    transition: transform .3s;
+    cursor: text;
+}
+
+.label-animated input:is(:focus, :not(:placeholder-shown)) + span{
+    background-color: #ffffff;
+    cursor:default;
+    transform: translateY(-50%) scale(.7);
+}
+
+/*diseño para botones*/
+.botones{
+    margin: auto 0;
+    position: sticky;
+    bottom: 0;
+}
+.boton{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 2em 3em;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.boton.siguiente{
+    background-color: green;
+    color: #ffffff;
+}
+
+.boton.volver{
+    background-color: rgb(255, 255, 255);
+    border: #006c38 1px solid;
+    color: #00713b;
+}

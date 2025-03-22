@@ -1,0 +1,27 @@
+{%extends "base.html" %}
+{%block title%}create{%endblock%}
+{%block css%} <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css')}}"> {%endblock%}
+{%block content%}
+<main class="main-form eb-garamond">
+    <form method="POST" class="form" id="form" autocomplete="off">
+
+        {%if input == 'name' %}
+        {% include "account/inputs/name.html" %}
+
+        {%elif input == 'age' %}
+        {% include "account/inputs/age.html" %}
+        
+        {%elif input == 'email' %}
+        {% include "account/inputs/email.html" %}
+        {%endif%}
+
+        <div class="botones">
+            <button id="volver" class="boton volver" type="submit" name="action" value="back" >Volver</button>
+            <!-- <input type="submit" value="Volver" class="boton volver" formaction="{{ url_for('index') }}"> -->
+            <input type="submit" value="Siguiente" class="boton siguiente">
+        </div>
+    </form>
+</main>
+
+<script src="{{ url_for('static', filename='js/form.js')}}"></script>
+{%endblock%}

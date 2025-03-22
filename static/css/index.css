@@ -1,0 +1,110 @@
+/* Inicio estilo home*/
+
+.telaraña{
+    /* background-color: #9EDF9C; */
+    display: grid;
+    grid-template-rows: 40% 30% 15%;
+    text-align: center;
+}
+
+.telaraña h2{
+    margin: auto;
+    font-size: 3em;
+    max-width: 400px;
+    top: 40px;
+}
+
+.telaraña p{
+    max-width: 400px;
+    margin: auto;
+}
+
+.button-home{
+    margin: auto;
+    padding: 15px 130px;
+    background-color: #62825D;
+    color: white;
+    cursor: pointer;
+    border: 0;
+}
+
+.img-platoDeWebos{
+    background-image: url(../public/img/platosDeWebos-700px.svg) ;
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    /* transform: rotate(40deg); */
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    z-index: 1;
+}
+
+/* Fin estilo home*/
+
+/* Inicio estilo bateo*/
+
+.gif-bateo-comida{
+    background-image: url(../public/gif/batear-comida.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Fin estilo bateo*/
+
+/* Inicio estilo tools*/
+.wrapper-2row.title{
+    grid-column: 1/4;
+    grid-row: 1;
+    /* background-color: #62825D; */
+    align-items: center;
+}
+.wrapper-2row.title h2{
+    font-size: 3em;
+    /* background-color: aqua; */
+    position: relative;
+    top: 30%;
+}
+.wrapper-2row.title p{
+    max-width: 600px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.circle-img{
+    border: #62825D 5px solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 0 20px #c8c5c5;
+}
+.img-centro{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+    
+}
+
+.img-centro.libreta{
+    background-image: url(../public/inkscape/libreta/libreta.svg);
+}
+
+.img-centro.naranja{
+    background-image: url(../public/inkscape/naranja/naranja.svg);
+}
+
+.img-centro.basketball{
+    background-image: url(../public/inkscape/basketball/basketball.svg);
+}
+
+.wrapper-3row.tools h3{
+    font-size: 1.3em;
+    /* background-color: aqua; */
+    position: relative;
+    top: 30%;
+}
+
+/* Fin estilo tools*/
